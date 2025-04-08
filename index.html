@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio Creativo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Electrónico</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="tittle">
+        <h2>Portafolio</h2>
+    </div>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">       
+        <div class="hero-content">
+            <h1>Vacner Dusan Copa Flores | Electrónico e Informático</h1>
+            <p>Circuitos integrados, automatización, IoT, robótica, reparación</p>
+            <button class="cta-button">Ver mis proyectos</button>
+        </div>
+        <div class="hero-image">            
+            <img src="src/portada.png" alt="Imagen de portfolio">
+            <div class="hero-button">
+                <button class="cta-button">Imagen creada con ChatGPT</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+        <h2>Mis Proyectos Recientes</h2>
+        <div class="project">
+            <div class="project-img">
+                <img src="src/arduino.webp" alt="Proyecto 1">
+            </div>
+            <div class="project-content">
+                <h3>Electrónica embebida</h3>
+                <p>Proyectos con microcontroladores (Arduino, ESP32, Raspberry Pi).Descripción breve + imágenes/esquemáticos + enlace a GitHub (si aplica).</p>
+                <div class="btn-proyect">
+                    <button class="project-button">Ver detalles</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+        <h2>Mis Proyectos Recientes</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
+                <h3>E-commerce</h3>
+                <p>Tienda online con carrito de compras</p>
+                <button class="project-btn">Ver detalles</button>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
+                <h3>Blog Personal</h3>
+                <p>Plataforma de artículos con sistema de comentarios</p>
+                <button class="project-btn">Ver detalles</button>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
+                <h3>Aplicación Web</h3>
+                <p>Sistema de gestión de tareas con calendario</p>
+                <button class="project-btn">Ver detalles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <h2>Mis Servicios</h2>
+        <div class="services-container">
+            <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Sitios web responsivos y aplicaciones modernas</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Diseño UI/UX</h3>
+                <p>Interfaces intuitivas y experiencias de usuario excepcionales</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Desarrollo Móvil</h3>
+                <p>Aplicaciones nativas e híbridas para iOS y Android</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-search"></i>
+                <h3>SEO</h3>
+                <p>Optimización para motores de búsqueda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="testimonials">
+        <h2>Lo que dicen mis clientes</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial active">
+                <p>"Excelente trabajo, cumplió con todas nuestras expectativas y más!"</p>
+                <div class="client">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 1">
+                    <div>
+                        <h4>Juan Pérez</h4>
+                        <p>CEO, Empresa XYZ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Profesionalismo y atención al detalle. Recomendado 100%."</p>
+                <div class="client">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 2">
+                    <div>
+                        <h4>María Gómez</h4>
+                        <p>Directora de Marketing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"El proyecto fue entregado a tiempo y con calidad superior."</p>
+                <div class="client">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 3">
+                    <div>
+                        <h4>Carlos Ruiz</h4>
+                        <p>Fundador, Startup ABC</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Footer con Formulario -->
+    <footer id="contacto" class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> contacto@miportfolio.com</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Envíame un mensaje</h3>
+                <form id="form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Mi Portfolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">Título del Proyecto</h2>
+            <img id="modalImage" src="" alt="Imagen del proyecto">
+            <p id="modalDescription">Descripción del proyecto...</p>
+            <div class="modal-links">
+                <a href="#" class="demo-link">Ver Demo</a>
+                <a href="#" class="code-link">Ver Código</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
