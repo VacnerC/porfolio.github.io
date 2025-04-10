@@ -6,37 +6,12 @@ burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Carrusel de testimonios
-let currentTestimonial = 0;
-const testimonials = document.querySelectorAll('.testimonial');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
 
-function showTestimonial(n) {
-    testimonials.forEach(testimonial => {
-        testimonial.classList.remove('active');
-    });
-    
-    currentTestimonial = (n + testimonials.length) % testimonials.length;
-    testimonials[currentTestimonial].classList.add('active');
-}
 
-prevBtn.addEventListener('click', () => {
-    showTestimonial(currentTestimonial - 1);
-});
-
-nextBtn.addEventListener('click', () => {
-    showTestimonial(currentTestimonial + 1);
-});
-
-// Auto-rotación del carrusel
-setInterval(() => {
-    showTestimonial(currentTestimonial + 1);
-}, 5000);
 
 // Modal para proyectos
 //const projectCards = document.querySelectorAll('.project-card');
-const projectCards = document.querySelectorAll('.project-content-2');
+const projectCards = document.querySelectorAll('.project-content');
 const modal = document.getElementById('projectModal');
 const modalTitle = document.getElementById('modalTitle');
 const modalImage = document.getElementById('modalImage');
