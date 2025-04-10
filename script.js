@@ -11,7 +11,7 @@ burger.addEventListener('click', () => {
 
 // Modal para proyectos
 //const projectCards = document.querySelectorAll('.project-card');
-const projectCards = document.querySelectorAll('.project-content');
+const projectCards = document.querySelectorAll('.project-content-2');
 const modal = document.getElementById('projectModal');
 const modalTitle = document.getElementById('modalTitle');
 const modalImage = document.getElementById('modalImage');
@@ -24,22 +24,19 @@ const projectsData = [
         title: "E-commerce",
         image: "https://via.placeholder.com/600x400",
         description: "Tienda online completa con carrito de compras, sistema de pago y panel de administración. Desarrollada con React.js y Node.js.",
-        demoLink: "#",
-        codeLink: "#"
+        
     },
     {
         title: "Blog Personal",
         image: "https://via.placeholder.com/600x400",
         description: "Plataforma de blog con sistema de comentarios, categorías y búsqueda. Implementado con WordPress personalizado y plugins desarrollados a medida.",
-        demoLink: "#",
-        codeLink: "#"
+        
     },
     {
         title: "Aplicación Web",
         image: "https://via.placeholder.com/600x400",
         description: "Sistema de gestión de tareas con calendario integrado, recordatorios y colaboración en equipo. Construido con Vue.js y Firebase.",
-        demoLink: "#",
-        codeLink: "#"
+        
     }
 ];
 
