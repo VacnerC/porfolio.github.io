@@ -65,15 +65,16 @@ body {
 }
 
 .tittle{
-    border-bottom: #2c3e50 solid;
+    /*border-bottom: #2c3e50 solid;*/
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .tittle h2{
-    padding: 10px 10px 10px 10%;
-    margin-top:0;
-    margin-bottom: 0;
+    padding: 10px 10px 10px 0;
     font-size: 2rem;
     color: #2c3e50;
+    border-bottom: 1px solid #34495e;
 }
 
 /* Sección Hero */
@@ -81,14 +82,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 10%;
+    padding: 4rem 10%;
     background-color: #f8f9fa;
 }
 
 
 
 .hero-content {
-    
     padding-right: 2rem;
     width: 40%;
 }
@@ -141,11 +141,13 @@ body {
 
 /* Sección Proyectos */
 .projects {
-    padding: 5rem 10%;
+    padding: 5% 0% 0% 0%;
     background-color: #fff;
 }
 
 .project {
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
 }
 
@@ -160,27 +162,193 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-
 .project-content{
+    display: flex;
     width: 40%;
-    height: 500px;
     flex: 1 1 200px;
     padding: 2rem 1.5rem;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-head h3{
+    margin: 0;
+    padding: 1rem 1rem 0;
+    color: #2c3e50;
+}
+
+.project-head p{
+    margin: 0;
+    padding: 0 1rem 1rem;
+    color: #7f8c8d;
 }
 
 .project-button{
-    width: 50%;
+    width: 80%;
     padding: 0.8rem;
     background-color: #3498db;
     color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+
+}
+
+/*Project-2*/
+
+.project-2 {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.project-content-2{
+    display: flex;
+    width: 40%;
+    flex: 1 1 200px;
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex-direction: column;
+    justify-content: space-between;
+
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-content-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-head-2 h3{
+    margin: 0;
+    padding: 1rem 1rem 0;
+    color: #2c3e50;
+}
+
+.project-head-2 p{
+    margin: 0;
+    padding: 0 1rem 1rem;
+    color: #7f8c8d;
+}
+
+
+.project-button-2{
+    width: 80%;
+    padding: 0.8rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.project-img-2{
+    padding: 2rem;
+    width: 60%;
+}
+
+.project-img-2 img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*fin*/
+
+.about {
+    padding: 10%;
+    margin: 0%;
+    background-color: #fff;
+}
+
+.about-grid {
+    display: flex;
+}
+
+.about-card{
+    width: 50%;
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-card h3{
+    padding: 1rem 1rem 0;
+    color: #2c3e50;
+}
+
+.about-card p{
+    padding: 0 1rem 1rem;
+    color: #7f8c8d;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.about-btn-1{
+    padding: 0.8rem;
+    margin: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about-btn-2{
+    padding: 0.8rem;
+    margin: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.only-btn{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.only-btn button{
+    padding: 0.8rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
 }
 
 .btn-proyect{
@@ -249,21 +417,43 @@ body {
 /* Sección Servicios */
 .services {
     padding: 5rem 10%;
-    background-color: #f8f9fa;
 }
 
 .services h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 3rem;
     font-size: 2rem;
     color: #2c3e50;
 }
 
 .services-container {
+    background-color: #abbdc9;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
+    border-radius: 8px;
+}
+
+.services-cart{
+    background-color: #abbdc9;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-radius: 8px;
+}
+
+.btn-cent{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.btn-cent button{
+    width: 20%;
+    justify-self: center;
 }
 
 .service {
@@ -295,43 +485,7 @@ body {
     color: #7f8c8d;
 }
 
-/* Sección Testimonios */
-.testimonials {
-    padding: 5rem 10%;
-    background-color: #fff;
-}
 
-.testimonials h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2rem;
-    color: #2c3e50;
-}
-
-.testimonial-carousel {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-}
-
-.testimonial {
-    display: none;
-    animation: fade 0.5s ease-in-out;
-}
-
-.testimonial.active {
-    display: block;
-}
-
-.testimonial p {
-    font-size: 1.2rem;
-    font-style: italic;
-    margin-bottom: 1.5rem;
-    color: #2c3e50;
-}
 
 .client {
     display: flex;
@@ -357,95 +511,36 @@ body {
     margin: 0;
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #3498db;
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s;
-}
 
-.carousel-btn:hover {
-    background-color: #2980b9;
-}
-
-.prev {
-    left: -20px;
-}
-
-.next {
-    right: -20px;
-}
-
-@keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
-}
 
 /* Footer */
 .footer {
     background-color: #2c3e50;
     color: #fff;
-    padding: 5rem 10% 2rem;
+    padding: 1rem;;
 }
 
-.footer-content {
+
+.contact-form{
     display: flex;
+    flex-direction: column;
+}
+
+.contact-form h3{
+    align-self: center;
+    padding-bottom: 1rem;
+}
+
+.contact-form form{
+    display: flex;
+    align-self: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #34495e;
+    width: 50%;
 }
-
-.footer-info, .contact-form {
-    flex: 1 1 300px;
-}
-
-.footer-info h3, .contact-form h3 {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.footer-info p {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.footer-info i {
-    margin-right: 10px;
-    color: #3498db;
-}
-
-.social-icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-icons a {
-    color: #fff;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #3498db;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
+.contact-form input{
     padding: 0.8rem;
     margin-bottom: 1rem;
     border: none;
@@ -472,6 +567,53 @@ body {
 .contact-form button:hover {
     background-color: #2980b9;
 }
+
+.footer-contact{
+    padding-left: 1rem;
+}
+.footer-contact-1{
+    padding-left: 10%;
+}
+
+.footer-info{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.footer-info p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-info i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.social-icons {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    align-self: flex-end ;
+    justify-content: end;
+    padding-right: 10%;
+    padding-bottom: 1rem;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+
 
 .copyright {
     text-align: center;

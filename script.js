@@ -35,7 +35,8 @@ setInterval(() => {
 }, 5000);
 
 // Modal para proyectos
-const projectCards = document.querySelectorAll('.project-card');
+//const projectCards = document.querySelectorAll('.project-card');
+const projectCards = document.querySelectorAll('.project-content-2');
 const modal = document.getElementById('projectModal');
 const modalTitle = document.getElementById('modalTitle');
 const modalImage = document.getElementById('modalImage');
